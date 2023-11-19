@@ -1,14 +1,13 @@
-import FilterStyled from './Filter.styled';
+import FilterStyled, { Label } from './Filter.styled';
 
-export const Filter = ({ filter, updateState }) => {
+export const Filter = ({ filter, updateFilter }) => {
   const handleChange = e => {
-    const { value, name } = e.target;
-    updateState(name, value);
+    updateFilter(e.target.value);
   };
 
   return (
     <FilterStyled>
-      <label>
+      <Label>
         Find contacts by name
         <input
           type="text"
@@ -17,7 +16,7 @@ export const Filter = ({ filter, updateState }) => {
           required
           onChange={handleChange}
         />
-      </label>
+      </Label>
     </FilterStyled>
   );
 };

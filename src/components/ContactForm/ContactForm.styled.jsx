@@ -5,19 +5,24 @@ const FormStyle = styled.form`
   flex-direction: column;
   width: 400px;
   padding: 12px;
-  background-color: #ffc0cb;
+  background: rgb(235, 182, 236);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 29, 222, 1) 0%,
+    rgba(235, 182, 236, 0.9809173669467787) 70%
+  );
   border: 3px solid #ff69b4;
   border-radius: 4px;
   label {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
-    color: #f08080;
+    color: #fff;
     font-size: 20px;
   }
-  imput {
+  input {
     font: inherit;
-    width: 400px;
+    width: 375px;
     padding: 10px;
     margin: 0 auto;
     border-radius: 4px;
